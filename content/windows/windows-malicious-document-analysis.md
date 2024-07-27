@@ -1,0 +1,5 @@
+- use ole tools
+- look for macros with olevba 
+- unzip the file - docx and pptx are actually zip files that can be unzipped. 
+- browse through the files
+- base64 url safe 

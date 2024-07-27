@@ -1,0 +1,19 @@
+## Kerberos and Kerberoasting 
+
+### What is Kerberos? 
+
+- Kerberos is a authentication method used in windows domains. 
+- this is in playbooks by ransomware groups and this is a step THEY will take to see if they can get lateral movement to deploy malware 
+- access will be obtained through phishing email, password spraying, access brokers, etc. 
+- Anyone can request a ticket-granting ticket from the KDC(Key Distribution center) if pre-authentication is not enabled or users can also request tgs ticket 
+- The request is in clear text and the resulting ticket is composed of two parts a session key that is encrypted with the hash of the users password and the TGT, which is encrypted with the session key 
+- If the account's password is insecure, then an attacker can brute-force the password and then discover the session key and then use that to decrypt the TGT. All this can be done offline.
+- If RC4 is being used then it is even quicker to crack these passwords, about 800 times faster. You can guess more passwords with rc4 
+- by default the gpo for kerberos is undefined so this allows attackers to do a downgrade to encryption
+- If the service account is using pre-authentication then TGS tickets are used and the process is very similar 
+- if no preauthentication then TGT are used 
+- 
+- automated tools such as rubeus are very powerful with kerberos 
+
+- krbtgt account needs to be changed twice - Why does KRBTGT need to be reset twice?
+KRBTGT keeps a password history of 2, hence we reset it twice to invalidate all tickets issued from old KRBTGT password.

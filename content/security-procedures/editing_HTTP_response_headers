@@ -1,0 +1,13 @@
+
+FOR WINDOWS IIS SERVER
+
+- go to IIS Manager
+- go to sites and then default web site and then into the source 
+- address the managed risk portal and see what needs to be addressed. 
+- find online commands 
+- validate with managed risk
+
+
+
+
+TODO: write about doing this Linux servers with apache or nginx etc. 
