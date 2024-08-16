@@ -40,7 +40,7 @@ jobs:
         uses: contention/rsync-deployments@v2.0.0
         with:
           FLAGS: -avz --delete
-          EXCLUDES: --exclude '.git*' --exclude 'node_modules' #could break things
+          EXCLUDES: --exclude '.git*'
           USER: ${{ secrets.USER }}
           HOST: ${{ secrets.REMOTE_HOST }}
           LOCALPATH: ./  # Adjust the source directory if needed
