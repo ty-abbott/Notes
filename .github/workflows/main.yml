@@ -28,7 +28,7 @@ jobs:
       - name: Check Build Status
         id: check_build
         run: |
-          if [ -f public ]; then  
+          if [ -d public ]; then  
             echo "Build succeeded"
           else
             echo "Build failed"
