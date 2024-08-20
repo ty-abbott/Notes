@@ -30,7 +30,7 @@ jobs:
         run: |
           if [ -d public ]; then  
             echo "Build succeeded"
-            pwd
+            
           else
             echo "Build failed"
             exit 1
@@ -44,7 +44,7 @@ jobs:
           EXCLUDES: --exclude '.git*'
           USER: ${{ secrets.USER }}
           HOST: ${{ secrets.REMOTE_HOST }}
-          LOCALPATH: ./  # Adjust the source directory if needed
+          LOCALPATH: /home/runner/work/Notes/Notes  # Adjust the source directory if needed
           REMOTEPATH: ${{ secrets.REMOTE_PATH }}
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
 
