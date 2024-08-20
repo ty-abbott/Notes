@@ -45,7 +45,7 @@ jobs:
 
       - name: rsync Files to Remote Server
         if: success()
-        run: rsync -avz "ssh -i ~/.ssh/key" --delete /home/runner/work/Notes/Notes ${{ secrets.USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH }}
+        run: rsync -avz -e "ssh -i ~/.ssh/key" --delete /home/runner/work/Notes/Notes ${{ secrets.USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH }}
         
 
    
