@@ -30,6 +30,7 @@ jobs:
         run: |
           if [ -d public ]; then  
             echo "Build succeeded"
+            pwd
           else
             echo "Build failed"
             exit 1
