@@ -36,6 +36,9 @@ jobs:
             exit 1
           fi
 
+      - name: List workspace files
+        run: ls -al /github/workspace/
+
       - name: Rsync Files to Remote Server
         if: success()
         uses: contention/rsync-deployments@v2.0.0
