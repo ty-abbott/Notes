@@ -36,12 +36,16 @@ jobs:
             exit 1
           fi
 
-      - name: List workspace files
-        run: pwd
+      - name: Set up ssh 
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/key
+          chmod 600 ~/.ssh/key
+          ssh-keyscan -H ${{ secrets.REMOTE_HOST }} >> ~/.ssh/known_hosts
 
       - name: SCP Files to Remote Server
         if: success()
-        run: scp -r -i ${{secrets.DEPLOY_KEY}} /home/runner/work/Notes/Notes ${{secrets.USER}}@${{secrets.REMOTE_HOST}}:${{secrets.REMOTE_PATH}}
+        run: scp -r -i .ssh/key /home/runner/work/Notes/Notes ${{ secrets.USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH }}
         
 
    
