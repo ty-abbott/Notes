@@ -41,6 +41,7 @@ jobs:
 
       - name: SCP Files to Remote Server
         if: success()
-        run: scp 
+        run: scp -r -i ${{secrets.DEPLOY_KEY}} /home/runner/work/Notes/Notes ${{secrets.USER}}@${{secrets.REMOTE_HOST}}:${{secrets.REMOTE_PATH}}
+        
 
    
