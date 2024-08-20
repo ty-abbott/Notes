@@ -25,6 +25,13 @@ jobs:
       - name: Build Project
         run: npx quartz build
 
+      - name: Set up ssh 
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/key
+          chmod 600 ~/.ssh/key
+          ssh-keyscan -H ${{ secrets.REMOTE_HOST }} >> ~/.ssh/known_hosts
+
       - name: Check Build Status
         id: check_build
         run: |
@@ -36,16 +43,9 @@ jobs:
             exit 1
           fi
 
-      - name: Set up ssh 
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/key
-          chmod 600 ~/.ssh/key
-          ssh-keyscan -H ${{ secrets.REMOTE_HOST }} >> ~/.ssh/known_hosts
-
-      - name: SCP Files to Remote Server
+      - name: rsync Files to Remote Server
         if: success()
-        run: scp -r -i ~/.ssh/key /home/runner/work/Notes/Notes ${{ secrets.USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH }}
+        run: rsync -avz --delete /home/runner/work/Notes/Notes ${{ secrets.USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH }}
         
 
    
