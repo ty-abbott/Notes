@@ -37,7 +37,7 @@ jobs:
           fi
 
       - name: List workspace files
-        run: ls -al /github/workspace/
+        run: ls -al
 
       - name: Rsync Files to Remote Server
         if: success()
