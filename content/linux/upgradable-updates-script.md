@@ -5,3 +5,5 @@
 - implement a bot account for emails with gmail
 - add bot details as persistent environment variables through editing ~/.bashrc and then reloading through source ~/.bashrc
 - test with echo $variable
+- write python code (this was a big help - https://mailtrap.io/blog/python-send-email-gmail/#:~:text=To%20send%20an%20email%20with,Transfer%20Protocol%20(SMTP)%20server.)
+- make sure that the env variables are accessed correctly and that the auth token is used rather than the password!
