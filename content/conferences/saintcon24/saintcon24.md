@@ -3,7 +3,7 @@
 ## Intro
 - This will be my own notes and wiki for saintcon this year. I will post things im interested in, plans, scheduling, and todos for competitions or villages
 
-## Interests w
+## Interests 
 - Blue Team(Eiffel65): competition and village
 - Space village 
 - FoxHunt/Radio Hunt competition, there is a village that could be cool 
