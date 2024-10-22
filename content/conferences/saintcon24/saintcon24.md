@@ -12,6 +12,7 @@
 - so you've been hacked comp
 - healthcare hacking village 
 - id/iot village
+- hardware hacking
 
 ## Schedule
 
@@ -24,6 +25,7 @@
 - Look around communities - 11 am
   - Blue Team
   - space village
+  - hardware hacking (solder vibes)
 - We fight for the User's...Session 1:30 pm Ballroom A
 - Bypassing the Gatekeepers - 2:30 pm Ballroom B
 - Blinded by TunnelVision: - 3:30 pm Ballroom C
