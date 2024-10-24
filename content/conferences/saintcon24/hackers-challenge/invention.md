@@ -1,0 +1,2 @@
+- the file is a elf 64 bit shared object. This is essentially a compiled library that can be used by other executables for functions etc.
+- it had a socket that was found in, it sets a string and then returns it. Found pretty simply through ghidra 
