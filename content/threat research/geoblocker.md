@@ -7,3 +7,6 @@ Why? Because I am curious...
 Getting into concurrency with python, essentially I am looking to be able to run different code at the same time {link to concurrency programming notes}
 
 https://github.com/ty-abbott/geoblocker
+
+
+going to use scapy for network simulation 
