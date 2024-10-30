@@ -14,3 +14,7 @@ I get this output when running "od shellcode"
 0000140 100400 164275 000002 002710 012325 157145 061057 067151
 0000160 071457 000150
 0000164
+
+if you use binwalk -A on the file then you figure out that it is ARM processor compilation. Arm is 32 bit, arm 64 is 64 bit(obviously). Always look to understand the processor 
+
+Shellcode is small code that is to be run as an exploit for a system. We can do the same types of analysis however it is not a full blown executable. We need to know what architecture it is for. 
