@@ -25,5 +25,6 @@ I like this plan, just going crazy on these. Knowing stuff and putting it in pra
 - msp blog
 - incident response scenarios(cysa+?)
 - aws cert
+- containerized email client??
 
 ### Weekly Plan
