@@ -1,9 +1,9 @@
 ## Future
 
 ### Topics I want to get highly technical in
-- Incident Response/Forensics/Malware Analysis
 - Security Engineer(securing the castle)
 - Coding/automation of Threat Intel and security tooling
+- malware analysis
 
 ### How to get there
 - continue analyzing malware and writing about it
