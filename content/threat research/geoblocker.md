@@ -5,7 +5,7 @@ the readme and ill post here in the future)but rather a drive by scanning inform
 Why? Because I am curious...
 
 Getting into concurrency with python, essentially I am looking to be able to run different code at the same time {link to concurrency programming notes}
-
+^^Now I have learned that it is actually parallelism which is different then concurrency
 https://github.com/ty-abbott/geoblocker
 
 
