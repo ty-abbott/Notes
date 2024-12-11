@@ -1,4 +1,4 @@
-'''
+```
 # Import module 
 import sqlite3 
 
@@ -36,11 +36,12 @@ conn.commit()
 
 # Closing the connection 
 conn.close()
-'''
+```
 
 It is also really critical to make the values to add a tuple for example 
 
-'''
+```
 statement = '''INSERT into tasks (description) VALUES (?)'''
 
 cursor.execute(statement, (value,))
+```
