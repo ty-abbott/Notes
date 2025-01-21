@@ -1,0 +1,6 @@
+## User Configs 
+
+
+### .bashrc
+- this is a script that is run each time a session for a user is created. 
+- this is why environmental variables that are wished to be permanent are exported in there. 
