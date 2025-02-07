@@ -26,3 +26,12 @@ A managed service account is an AD DS object class that enables:
 - Simplified SPN management.
 
 Group managed service accounts
+- basically takes managed acounts and goes one step further allowing the service account to be used on more than one server. 
+
+Use cases for computer accounts
+- A computer account in a domain is primarily used to authenticate and manage access to network resources for individual computers within a domain, allowing for centralized control over which computers can access shared files, printers, and other network services, while also enabling security policies to be applied based on the computer's identity and group memberships; essentially acting as a security principal for each device on the network.
+- You must create a KDS root key on a domain controller in the domain for group managed service accounts to work
+
+Group types
+- security - Security groups are security-enabled, and you use them to assign permissions to various resources. You can use security groups in permission entries in access control lists (ACLs) to help control security for resource access. If you want to use a group to manage security, it must be a security group.
+- distribution - Email applications typically use distribution groups, which are not security-enabled. You also can use security groups as a means of distribution for email applications.
