@@ -11,5 +11,3 @@ These settings are of critical importance to the AD DS environment, and thus, ma
 The Default Domain Controllers Policy GPO links to the OU of the domain controllers. Because computer accounts for domain controllers are kept exclusively in the Domain Controllers OU, and other computer accounts should be kept in other OUs, this GPO affects only domain controllers or other computer objects that are in the Domain Controllers OU.
 
 You should modify GPOs linked to the Domain Controllers OU to implement your auditing policies and to assign user rights that are required on domain controllers.
-
-
