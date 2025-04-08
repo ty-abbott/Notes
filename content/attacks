@@ -18,6 +18,9 @@
 - krbtgt account needs to be changed twice - Why does KRBTGT need to be reset twice?
 KRBTGT keeps a password history of 2, hence we reset it twice to invalidate all tickets issued from old KRBTGT password.
 
+### Golden ticket attacks
+- when we have the NTLM hash of the krbtgt account we can impersonate whatever account we want. What is required is the fqdn, domain SID, the account and the krbtgt account password
+- we can get the ntlm hash through DC Sync or other methods, potentially network sniffing 
 ## LLMNR 
 - legacy protocol pre dns. Essentially it does a broadcast message which IP is associated with hostname, then an IP can respond. Responder.py 
 is used to abuse. https://www.blackhillsinfosec.com/how-to-disable-llmnr-why-you-want-to/
