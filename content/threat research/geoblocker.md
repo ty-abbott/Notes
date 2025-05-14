@@ -15,3 +15,7 @@ going to use scapy for network simulation
 Trying to figure out what to do in regards to data base updates and inserts. Do I run these things after every IP is examined? That can be a lot of work. Do I save to state and then do one massive add every so often(then delete state)? 
 - For now I think I will just keep it simple and update every time.
 - sqlite should have good locking built in for concurrency
+
+- https://fastapi.tiangolo.com/advanced/websockets/#try-the-websockets-with-dependencies
+- its been awhile since looking at this code so I am really trying to piece it all back together.
+- 
