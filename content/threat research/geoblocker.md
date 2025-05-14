@@ -18,4 +18,5 @@ Trying to figure out what to do in regards to data base updates and inserts. Do 
 
 - https://fastapi.tiangolo.com/advanced/websockets/#try-the-websockets-with-dependencies
 - its been awhile since looking at this code so I am really trying to piece it all back together.
-- 
+- https://www.starlette.io/websockets/
+- https://www.starlette.io/endpoints/#websocketendpoint
